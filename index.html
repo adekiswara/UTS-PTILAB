@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Data Mahasiswa</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        
+        <div id="header" class="row">
+            <div class="col-12 center">                
+                <br><h1>Data Mahasiswa</h1><br>
+                <h4>Universitas Zimbabwe</h4><br>
+            </div>
+        </div>
+        
+        <div>
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="nim"><b>NIM</b></label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="nim" name="nim" placeholder="Nomor Induk Mahasiswa Anda"><br>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="namalengkap"><b>Nama Lengkap*</b></label><label class="validation-error hide" id="namalengkapValidationError">Bagian ini wajib diisi.</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="namalengkap" name="namalengkap" placeholder="Nama Lengkap Anda"><br>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="alamat"><b>Alamat</b></label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="alamat" name="alamat" placeholder="Alamat Tempat Tinggal Asal Anda">
+                            </div>
+                        </div>            
+                
+                        <div class="row">
+                            <button type="submit" class="button1">
+                                <i class="fa fa-plus" aria-hidden="true"></i> Tambah
+                            </button>
+                            
+                            <button type="reset" class="button2">
+                                <i class="fa fa-undo" aria-hidden="true"></i> Reset
+                            </button>
+                        </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="container">
+            <table class="list" id="listmahasiswa">
+                <h3><b>"List Table Mahasiswa Zimbabwe"</b></h3>
+                    <thead>
+                        <tr>
+                            <th width="10%">NIM</th>
+                            <th width="20%">Nama</th>
+                            <th width="55%">Alamat</th>
+                            <th width="20%"> Pengaturan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+            </table>
+        </div>
+
+        <div id="snackbar" class="berhasil"></div>
+
+        <script src="script.js"></script>
+    </body>
+
+    <footer class="col-12 footer">
+        <h2>Ade Kiswara - 00000040037</h2>
+    </footer>
+</html>
+

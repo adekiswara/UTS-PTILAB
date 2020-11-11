@@ -1,0 +1,311 @@
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+*   {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin:0; 
+    padding:0;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#header{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+body > table{
+    width: 80%;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: white;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;  
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.button1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+.button1:hover {
+    background-color: #45a049;
+}
+
+.button2 {
+    background-color: #e3b24f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.button2:hover {
+    background-color: #cca047;
+}
+
+.button3 {
+    background-color: #30b0ac;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.button3:hover {
+    background-color: #289491;
+}
+
+.button4 {
+    background-color: #b52f43;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.button4:hover {
+    background-color:#9c283a;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    color: black;
+    text-align: left;
+    margin: 16px 0px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: white;
+    color: white;
+    text-align: center;
+}
+
+.button5 {
+    background-color: #616161;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.button5:hover {
+    background-color:#545454;
+}
+
+.button6 {
+    background-color:#2b7fe0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.button6:hover {
+    background-color:#2363ad;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.col-12{width: 100%;}
+
+[class*="col-"]{
+    float: left;
+}
+
+
+#snackbar {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin-left: -125px; 
+    background-color: #333; 
+    color: #fff;
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+#snackbar.berhasil {
+    background-color: green;
+}
+
+#snackbar.hapus {
+    background-color: red;
+}
+
+#snackbar.update {
+    background-color: lightseagreen;
+}
+
+#snackbar.gagal {
+    background-color: #d4cc35; 
+}
